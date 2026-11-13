@@ -9,7 +9,7 @@ export class AppComponent {
   readonly currentYear = new Date().getFullYear();
 
   readonly skills = [
-    'Angular 15/16',
+    'Angular 15/16/17/18/19/20',
     'TypeScript',
     'HTML5',
     'CSS3',
