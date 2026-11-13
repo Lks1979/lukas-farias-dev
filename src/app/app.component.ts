@@ -20,6 +20,7 @@ export class AppComponent {
     'Figma',
     'Jest',
     'Testes unitários',
+    'Taac',
     'Integração com APIs',
     'Acessibilidade Web',
     'Engenharia de IA',
