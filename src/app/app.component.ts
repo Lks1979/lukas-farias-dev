@@ -8,6 +8,20 @@ import { Component } from '@angular/core';
 export class AppComponent {
   readonly currentYear = new Date().getFullYear();
 
+  sendFeedback(field: HTMLTextAreaElement): void {
+    const message = field.value.trim();
+
+    if (!message) {
+      field.setCustomValidity('Digite sua crítica ou sugestão antes de enviar.');
+      field.reportValidity();
+      return;
+    }
+
+    const whatsappMessage = `Olá, Lukas! Tenho uma crítica ou sugestão sobre a Lukas 3D:\n\n${message}`;
+    const whatsappUrl = `https://wa.me/5511965781078?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+  }
+
   readonly skills = [
     'Angular 15/16/17/18/19/20',
     'TypeScript',
