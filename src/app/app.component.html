@@ -8,7 +8,6 @@
       <a href="#projetos">Projetos</a>
       <a href="#competencias">Competências</a>
       <a href="#formacao">Formação</a>
-      <a href="#feedback">Críticas e sugestões</a>
       <a href="#contato">Contato</a>
     </div>
   </nav>
@@ -24,7 +23,6 @@
       </p>
       <div class="actions">
         <a class="btn" href="#contato">Entre em contato</a>
-        <a class="btn alt" href="#feedback">Enviar crítica ou sugestão</a>
         <a class="btn alt" href="https://github.com/Lks1979" target="_blank" rel="noopener noreferrer">Ver GitHub ↗</a>
       </div>
       <div class="tagline">
@@ -165,37 +163,6 @@
             <li>Versionamento de projetos e publicação de aplicações de IA.</li>
           </ul>
         </div>
-      </div>
-    </div>
-  </section>
-  <section id="feedback">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">Sua opinião importa</div>
-        <h2>Críticas e sugestões</h2>
-        <p>Conte o que achou ou o que podemos melhorar. Sua mensagem será preparada para você enviar pelo WhatsApp.</p>
-      </div>
-      <div class="feedback-panel">
-        <form class="feedback-form" (submit)="sendFeedback(feedback); $event.preventDefault()">
-          <label for="feedback-message">Sua mensagem</label>
-          <textarea
-            #feedback
-            id="feedback-message"
-            name="feedback"
-            rows="6"
-            maxlength="1000"
-            required
-            placeholder="Escreva sua crítica ou sugestão..."
-            aria-describedby="feedback-help"
-            (input)="feedback.setCustomValidity('')"
-          ></textarea>
-          <div class="feedback-footer">
-            <p class="small" id="feedback-help">
-              Até 1.000 caracteres. O WhatsApp abrirá com a mensagem pronta para você revisar e enviar.
-            </p>
-            <button class="btn" type="submit">Enviar pelo WhatsApp ↗</button>
-          </div>
-        </form>
       </div>
     </div>
   </section>
