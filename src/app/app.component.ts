@@ -14,6 +14,7 @@ export class AppComponent {
     'HTML5',
     'CSS3',
     'JavaScript',
+    'Noções básicas de Python',
     'Bootstrap',
     'Git',
     'GitHub',
